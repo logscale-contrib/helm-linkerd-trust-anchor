@@ -1,9 +1,9 @@
 apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
-  name: {{ include "linkerd2-trust-anchor.fullname" . }}
+  name: linkerd-trust-anchor
   labels:
     {{- include "linkerd2-trust-anchor.labels" . | nindent 4 }}
 spec:
   ca:
-    secretName: {{ include "linkerd2-trust-anchor.fullname" . }}
+    secretName: linkerd-trust-anchor
