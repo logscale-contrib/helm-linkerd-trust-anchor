@@ -6,4 +6,4 @@ metadata:
     {{- include "linkerd2-trust-anchor.labels" . | nindent 4 }}
 spec:
   ca:
-    secretName: {{ include "linkerd2-trust-anchor.fullname" . }}-issuer
+    secretName: {{ include "linkerd2-trust-anchor.fullname" . }}
