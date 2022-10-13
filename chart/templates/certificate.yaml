@@ -1,15 +1,15 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: {{ include "linkd2-trust-anchor.fullname" . }}
+  name: {{ include "linkerd2-trust-anchor.fullname" . }}
   labels:
-    {{- include "linkd2-trust-anchor.labels" . | nindent 4 }}
+    {{- include "linkerd2-trust-anchor.labels" . | nindent 4 }}
 spec:
-  secretName: {{ include "linkd2-trust-anchor.fullname" . }}-issuer
+  secretName: {{ include "linkerd2-trust-anchor.fullname" . }}-issuer
   duration: 48h
   renewBefore: 25h
   issuerRef:
-    name: {{ include "linkd2-trust-anchor.fullname" . }}
+    name: {{ include "linkerd2-trust-anchor.fullname" . }}
     kind: Issuer
   commonName: identity.linkerd.cluster.local
   dnsNames:

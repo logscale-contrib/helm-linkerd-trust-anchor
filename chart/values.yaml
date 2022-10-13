@@ -1,14 +1,24 @@
-# Default values for linkd2-trust-anchor.
+# Default values for linkerd2-trust-anchor.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-k8s-secrets:
-  tls: # fixed name for this group
-    linkerd-trust-anchor: # free name of the tls secret in K8S.
-      cert: |
-        -----END CERTIFICATE-----
-        -----BEGIN CERTIFICATE-----
-      key: |
-        -----BEGIN PRIVATE KEY-----
-        ...
-        -----END PRIVATE KEY-----
+"tls":
+  "crt": |
+    -----BEGIN CERTIFICATE-----
+    MIIBsTCCAVegAwIBAgIQNPv6cXxu8oBhKBrgvZRB7DAKBggqhkjOPQQDAjApMScw
+    JQYDVQQDEx5pZGVudGl0eS5saW5rZXJkLmNsdXN0ZXIubG9jYWwwHhcNMjIxMDEz
+    MTgzNDIwWhcNMjMxMDEzMTgzNDIwWjApMScwJQYDVQQDEx5pZGVudGl0eS5saW5r
+    ZXJkLmNsdXN0ZXIubG9jYWwwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARZQfYi
+    PHlUo2MVHlnGWYIqI7aIMSytOH+nuVvi7DFam+h/HHmEDP355HUHWit0IlniFCT1
+    cU1l/bxB7YX9PG1no2EwXzAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0lBBYwFAYIKwYB
+    BQUHAwEGCCsGAQUFBwMCMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFN+j5KWM
+    kZj0UnFljtkxSDLoYuSNMAoGCCqGSM49BAMCA0gAMEUCIHqTCrWwKfMFpRc+qQkg
+    UoIxKvTrSDcafHu1FzBHmAdIAiEAgl0iBeC2s8bLWR9zXRgUOc7mjCIrRrjhQuVV
+    hsnYeVk=
+    -----END CERTIFICATE-----
+  "key": |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEINnDcuzDtdfJejkHVe/olHKT31hZjr/N9ek6eIblmTRfoAoGCCqGSM49
+    AwEHoUQDQgAEWb2FhH+Enw1DdHj3z1bHek5zXBLQ1XnmjKoN7Z/cgCqF20s6atYT
+    d9j4I8JwBXMcsuZAYurmjKTwhXHsFa5png==
+    -----END EC PRIVATE KEY-----

@@ -1,9 +1,9 @@
 apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
-  name: {{ include "linkd2-trust-anchor.fullname" . }}
+  name: {{ include "linkerd2-trust-anchor.fullname" . }}
   labels:
-    {{- include "linkd2-trust-anchor.labels" . | nindent 4 }}
+    {{- include "linkerd2-trust-anchor.labels" . | nindent 4 }}
 spec:
   ca:
-    secretName: {{ include "linkd2-trust-anchor.fullname" . }}-issuer
+    secretName: {{ include "linkerd2-trust-anchor.fullname" . }}-issuer

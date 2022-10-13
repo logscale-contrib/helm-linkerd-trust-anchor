@@ -1,6 +1,0 @@
-dependencies:
-- name: k8s-secrets
-  repository: http://helm.yotron.de/
-  version: 1.0.0
-digest: sha256:9e1674ce56b3178dfce2a3c3a4d324b15f557ab02f0de9b1e70bea68fcb40db7
-generated: "2022-10-13T13:57:51.448755-04:00"
