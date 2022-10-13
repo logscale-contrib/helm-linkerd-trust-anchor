@@ -9,7 +9,7 @@ spec:
   duration: 48h
   renewBefore: 25h
   issuerRef:
-    name: {{ include "linkerd2-trust-anchor.fullname" . }}
+    name: linkerd-trust-anchor
     kind: Issuer
   commonName: identity.linkerd.cluster.local
   dnsNames:
