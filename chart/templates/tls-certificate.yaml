@@ -2,6 +2,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: linkerd-identity-issuer
+  namespace: linkerd
   labels:
     {{- include "linkerd2-trust-anchor.labels" . | nindent 4 }}
 spec:
