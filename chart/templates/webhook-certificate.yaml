@@ -29,7 +29,7 @@ metadata:
   labels:
     {{- include "linkerd2-trust-anchor.labels" . | nindent 4 }}
 spec:
-  secretName: linkerd-proxy-injector-tls
+  secretName: linkerd-proxy-injector-k8s-tls
   duration: 2160h0m0s
   renewBefore: 360h0m0s
   issuerRef:
