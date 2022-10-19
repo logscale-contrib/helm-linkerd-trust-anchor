@@ -10,8 +10,8 @@ spec:
   duration: 2160h0m0s
   renewBefore: 360h0m0s
   issuerRef:
-    name: webhook-issuer
-    kind: Issuer
+    name: linkerd-ca
+    kind: ClusterIssuer
   commonName: linkerd-policy-validator.linkerd.svc
   dnsNames:
   - linkerd-policy-validator.linkerd.svc
@@ -33,8 +33,8 @@ spec:
   duration: 2160h0m0s
   renewBefore: 360h0m0s
   issuerRef:
-    name: webhook-issuer
-    kind: Issuer
+    name: linkerd-ca
+    kind: ClusterIssuer
   commonName: linkerd-proxy-injector.linkerd.svc
   dnsNames:
   - linkerd-proxy-injector.linkerd.svc
@@ -55,8 +55,8 @@ spec:
   duration: 2160h0m0s
   renewBefore: 360h0m0s
   issuerRef:
-    name: webhook-issuer
-    kind: Issuer
+    name: linkerd-ca
+    kind: ClusterIssuer
   commonName: linkerd-sp-validator.linkerd.svc
   dnsNames:
   - linkerd-sp-validator.linkerd.svc
@@ -77,8 +77,8 @@ spec:
   duration: 2160h0m0s
   renewBefore: 360h0m0s
   issuerRef:
-    name: webhook-issuer
-    kind: Issuer
+    name: linkerd-ca
+    kind: ClusterIssuer
   commonName: tap.linkerd-viz.svc
   dnsNames:
   - tap.linkerd-viz.svc
@@ -99,8 +99,8 @@ spec:
   duration: 2160h0m0s
   renewBefore: 360h0m0s
   issuerRef:
-    name: webhook-issuer
-    kind: Issuer
+    name: linkerd-ca
+    kind: ClusterIssuer
   commonName: tap-injector.linkerd-viz.svc
   dnsNames:
   - tap-injector.linkerd-viz.svc
@@ -121,8 +121,8 @@ spec:
   duration: 2160h0m0s
   renewBefore: 360h0m0s
   issuerRef:
-    name: webhook-issuer
-    kind: Issuer
+    name: linkerd-ca
+    kind: ClusterIssuer
   commonName: jaeger-injector.linkerd-jaeger.svc
   dnsNames:
   - jaeger-injector.linkerd-jaeger.svc
