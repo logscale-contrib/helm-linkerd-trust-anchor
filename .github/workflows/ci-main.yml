@@ -33,7 +33,7 @@ jobs:
       - name: Semantic Release
         if: github.event_name != 'pull_request'
         id: version
-        uses: cycjimmy/semantic-release-action@v3.1.1
+        uses: cycjimmy/semantic-release-action@v3.1.2
         with:
           semantic_version: 19
           extra_plugins: |
