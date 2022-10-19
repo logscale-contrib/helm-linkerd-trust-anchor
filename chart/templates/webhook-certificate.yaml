@@ -15,7 +15,6 @@ spec:
   commonName: linkerd-policy-validator.linkerd.svc
   dnsNames:
   - linkerd-policy-validator.linkerd.svc
-  isCA: false
   privateKey:
     algorithm: ECDSA
     encoding: PKCS8    
@@ -39,7 +38,6 @@ spec:
   commonName: linkerd-proxy-injector.linkerd.svc
   dnsNames:
   - linkerd-proxy-injector.linkerd.svc
-  isCA: false
   privateKey:
     algorithm: ECDSA
   usages:
@@ -62,7 +60,6 @@ spec:
   commonName: linkerd-sp-validator.linkerd.svc
   dnsNames:
   - linkerd-sp-validator.linkerd.svc
-  isCA: false
   privateKey:
     algorithm: ECDSA
   usages:
@@ -85,7 +82,6 @@ spec:
   commonName: tap.linkerd-viz.svc
   dnsNames:
   - tap.linkerd-viz.svc
-  isCA: false
   privateKey:
     algorithm: ECDSA
   usages:
@@ -108,7 +104,6 @@ spec:
   commonName: tap-injector.linkerd-viz.svc
   dnsNames:
   - tap-injector.linkerd-viz.svc
-  isCA: false
   privateKey:
     algorithm: ECDSA
   usages:
@@ -131,7 +126,6 @@ spec:
   commonName: jaeger-injector.linkerd-jaeger.svc
   dnsNames:
   - jaeger-injector.linkerd-jaeger.svc
-  isCA: false
   privateKey:
     algorithm: ECDSA
   usages:
