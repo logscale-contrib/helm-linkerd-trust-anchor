@@ -1,1 +1,14 @@
 apiVersion: v1
+entries:
+  linkerd2-trust-anchor:
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: "2022-10-25T12:58:00.278915943Z"
+    description: Simple demo project for CI release of helm
+    digest: ec703f7dc28f22658047017e8f98b5e528b4231836f0314a4e7882e989f7eac9
+    name: linkerd2-trust-anchor
+    type: application
+    urls:
+    - https://github.com/logscale-contrib/helm-linkerd-trust-anchor/releases/download/v2.0.1/linkerd2-trust-anchor-2.0.1.tgz
+    version: 2.0.1
+generated: "2022-10-25T12:58:00.278488737Z"
