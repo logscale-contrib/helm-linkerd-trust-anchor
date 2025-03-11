@@ -28,7 +28,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "22"
       - uses: azure/setup-helm@v3
       - name: Semantic Release
         if: github.event_name != 'pull_request'
